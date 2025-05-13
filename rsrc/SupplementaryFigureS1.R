@@ -7,9 +7,7 @@ library(RColorBrewer)
 data = read.csv('phospho_logodds.csv')
 
 
-#colors = c("#009392","#9CCB86","#E88471","#E9E29C","#EEB479")
 colors = c("#E88471","#EEB479","#E9E29C","#9CCB86","#009392")
-# Log odd ratio
 p<- ggplot(data, aes(y=Metric, x=Odd_ratio,fill=Metric)) + 
   geom_bar(stat = 'identity', width=0.7) + 
   labs(x='log odds ratio',y=NULL) + 
