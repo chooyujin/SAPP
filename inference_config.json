@@ -2,7 +2,7 @@
   "input_path": "example_folder/inference_input_file.tsv",
   "fasta_path": "example_folder/inference_input_protein.fasta",
   "output_path": "example_folder/inference",
-  "device": "cuda:0",
+  "device": "cpu",
   "default_config": {
     "vocab_size":22,
     "window":25,
