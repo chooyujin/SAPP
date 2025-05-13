@@ -1,0 +1,41 @@
+{
+  "input_path": "example_folder/inference_input_wRSA.txt",
+  "output_path": "example_folder/result.csv",
+  "device": "cuda:0",
+  "default_config": {
+    "vocab_size":22,
+    "window_size":25,
+    "hidden_size": 256,
+    "n_layers":2,
+    "attn_heads":4,
+    "feed_forward_dim":758,
+    "batch_size": 128,
+    "dropout": 0.2
+  },
+
+  "ptm_configs":{
+    "SAPPphos":{
+      "hidden_size":256, 
+      "model_paths": ["data/models/SAPPphos"]
+    },
+    "SAPP-methylR":{
+      "model_paths": ["data/models/SAPP-methylR"]
+    },
+    "SAPP-acetylK":{
+      "model_paths": ["data/models/SAPP-acetylK"]
+    },
+    "SAPP-methylK":{
+      "model_paths": ["data/models/SAPP-methylK"]
+    },
+    "SAPP-phosY":{
+      "model_paths": ["data/models/SAPP-phosY"]
+    },
+    "SAPP-sumoK":{
+      "model_paths": ["data/models/SAPP-sumoK"]
+    },
+    "SAPP-ubiquitinK":{
+      "model_paths": ["data/models/SAPP-ubiquitinK"]
+    }
+  }
+  
+}

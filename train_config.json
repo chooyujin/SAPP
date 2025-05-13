@@ -1,0 +1,36 @@
+{
+    "path_config":{
+        "train_data_path": "data/paper_data/train.tsv",
+        "train_fasta_path": "data/paper_data/train_proteins.fasta",
+        "train_rsa_path":"/data1/CYJ_Methyl/paper_data_2025/RSA_folder",
+        "weight_save_dir": "results/SAPPphos_weight/"
+    },
+    "ptm_config":{
+        "target_residue": ["S","T"]
+    },
+    "model_config":{
+        "window": 25,
+        "embedding_dim": 22,
+        "hidden": 256,
+        "n_layers": 2,
+        "attn_heads": 4,
+        "feed_forward_dim": 758
+    },
+    "train_config":{
+        "epochs": 300,
+        "use_KFold":true,
+        "Folds":10,
+        "dropout":0.2,
+        "train_batch_size": 64,
+        "valid_batch_size":1024, 
+        "learning_rate": 0.0005,
+        "weight_decay":1e-6,
+        "schedular_Tmax":20,
+        "schedular_eatmin":0,
+        "patient_limit":100, 
+        "random_seed":2023,
+        "device": "cuda:0",
+        "pretrained_model_path": "data/models/SAPPphos/SAPPphos_0.pt",
+        "freeze_backbone": false
+    }
+  }
