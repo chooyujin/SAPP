@@ -207,3 +207,7 @@ python train.py \
   --config train_config.json \
 ```
 
+---
+### SAPP Datasets and Result files
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15393286.svg)](https://doi.org/10.5281/zenodo.15393286) \
+Link - [https://zenodo.org/records/15393286]
