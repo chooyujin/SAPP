@@ -211,3 +211,7 @@ python train.py \
 ### SAPP Datasets and Result files
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15393286.svg)](https://doi.org/10.5281/zenodo.15393286) \
 Link - [https://zenodo.org/records/15393286]
+
+---
+### Citation
+[Structure Aware PTM Prediction. Yujin Choo, Seungjin Na, and Eunok Paek, Computers in Biology and Medicine 2025.](https://www.sciencedirect.com/science/article/pii/S0010482525015227)
