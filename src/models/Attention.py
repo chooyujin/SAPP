@@ -42,7 +42,7 @@ class MultiHeadAdjAttentionLayer(nn.Module):
         V = self.fc_v(value)
         
         str_K = self.str_fc_k(key)
-        str_V = self.str_fc_k(value)
+        str_V = self.str_fc_v(value)
         
         rsa_Q = x_rsa.reshape(batch_size,-1,1, 128).permute(0,2,1,3)
         
